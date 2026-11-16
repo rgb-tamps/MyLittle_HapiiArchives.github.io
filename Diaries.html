@@ -2,213 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ecb3c2">
+
+
     <title>Diary</title>
-    <style>
-       body {
-    background-image: url(./Lover\ Background.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-}
-
-button {
-    background-color: rgb(105, 143, 180);
-    border-radius: 5px;
-    border: none; /* Fixed border issue */
-    margin: 10px;
-    padding: 10px ; /* Adjusted padding */
-    text-align: center;
-    position: fixed;
-    bottom: 20px; /* Adjusted for mobile */
-    right: 50px; /* Adjusted for mobile */
-    z-index: 1000; /* Ensure button is on top */
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-
-        button:hover {
-            background-color: rgb(85, 123, 160);
-        }
-
-        button:active {
-            background-color: rgb(65, 103, 140);
-            transform: translateY(2px);
-        }
-
-a {
-    text-decoration: none;
-    color: rgb(245, 230, 199);
-    padding: 10px 60px;
-    
-}
-
-.containermain {
-background-color: rgba(179, 191, 217, 0.5);
-border-radius: 10px;
-width: 95%; /* Use 95% for mobile */
-margin: 10px auto;
-padding: 20px;
-display: grid;
-grid-template-columns: repeat(1, 1fr);
-box-sizing: border-box;
-}
-.box{
-    background-color: #ffffff; 
-    height: auto;
-    background-size: cover;
-    padding: 20px;
-    grid-column: span 2;
-    margin: 0; 
-    text-align: justify;
-}
-
-.box1{
-    background-color: #ffffff; 
-    color:rgb(240, 177, 90); 
-    height: auto;
-    background-size: cover;
-    padding: 60px;
-    margin: 0; 
-    line-height: 25px;
-    text-align: justify;
-}
-.box1 h2{
-    color: rgb(186, 112, 139);
-}
-.box1 p{
-    padding: 20px 30px;
-}
-
-.box2{
-    background-color: #ffffff; 
-    color:rgb(240, 177, 90); 
-    height: auto;
-    background-size: cover;
-    padding: 60px;
-    margin: 0; 
-    line-height: 25px;
-    text-align: justify;
-}
-.box2 h2{
-    color: rgb(186, 112, 139);
-}
-.box2 p{
-    padding: 20px 30px;
-}
-
-.screen1 {
-    padding: 10px; /* Add padding for better spacing */
-}
-
-
-.note{  
-    background-color:rgb(241, 196, 132);
-    color: #ffffff; 
-    border-radius: 20px;
-    padding: 10px; 
-    margin: 10px;
-    margin-left: 600px;
-    width: 400px; 
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-       
-
-
-    @media (max-width: 600px) {
-            * {
-    box-sizing: border-box;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  } 
-            button {
-                width: 90%; /* Full width button on mobile */
-                padding: 15px 30px; /* More padding */
-                right: auto;
-            }
-            a {
-                padding: 10px;
-            }
-        
-            .box{
-    background-color: #ffffff; 
-    height: auto;
-    background-size: cover;
-    padding: 20px;
-    grid-column: span 2;
-    margin: 0; 
-    text-align: justify;
-}
-
-.box1{
-    background-color: #ffffff; 
-    color:rgb(240, 177, 90); 
-    height: auto;
-    background-size: cover;
-    padding: 30px ;
-    margin: 0; 
-    line-height: 25px;
-    text-align: justify;
-}
-.box1 h2{
-    color: rgb(186, 112, 139);
-}
-.box1 p{
-    padding: 0;
-    font-size: small;
-}
-
-.box2{
-    background-color: #ffffff; 
-    color:rgb(240, 177, 90); 
-    height: auto;
-    background-size: cover;
-    padding: 30px ;
-    margin: 0; 
-    line-height: 25px;
-    text-align: justify;
-}
-.box2 h2{
-    color: rgb(186, 112, 139);
-}
-.box2 p{
-    padding: 0;
-    font-size: small;
-}
-
-
-
-.note{
-    display: flex; 
-    background-color:rgb(241, 196, 132);
-    color: #ffffff; 
-    border-radius: 20px;
-    padding: 10px; 
-    margin: 10px 50px;
-    margin-bottom: 100px;
-    width:auto; 
-    height: 100px;
-    align-items: center; 
-    text-align: center;
-}
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
-<body>
+<body class="archive-body archive-diary-page">
+<header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Lover's Journal home">LOVER <span aria-hidden="true">&#9825;</span></a>
+    <button class="menu-toggle" id="hamburgerButton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="menu" aria-label="Main navigation">
+        <a href="index.html#memories">Photo memories</a>
+        <a href="index.html#letters">Letters</a>
+        <a href="Diaries.html">My diaries</a>
+        <a href="List.html">Our list</a>
+    </nav>
+</header>
+<main class="archive-main">
+    <section class="archive-heading" aria-labelledby="archive-title">
+        <p class="eyebrow">A page from the past</p>
+        <h1 id="archive-title">My diaries</h1>
+    </section>
     <div class="screen1">
         <div class="containermain">
           <div class="box box1">
@@ -220,11 +39,11 @@ box-sizing: border-box;
                     sobra na di ko na alam pano ako babawi kasi forever mag sstay sakanya ung sakit
                     sa totoo nga swerte ako kasi di nya pa ako binibitawan e ket ang too much na bonak mo kloyd..
                     sana dito pa si daddy para masabi ko sakanya mali ko.. gusto ko umiyak naiinis ako sa sarili
-                    ko di ko talaga mapapatawad sarili ko.. sumabay pa ung regret ko sa new year haha. Tatahimik 
+                    ko di ko talaga mapapatawad sarili ko.. sumabay pa ung regret ko sa new year haha. Tatahimik
                     ang bahay tangina ko talaga wala ng bago sakin puro nalng disappoinment lagi nalng idk pano ko aayusin
                     lahat ng mali ko nakasakit na ako masyado ginawa talaga ako para mang disappoint.. i regret pano ko sya
-                    i treat di nya namn deserve yon napa feel ko pa sakanya na di sya enough na di sya maganda the guilt 
-                    talaga pinapatay ako di namn totoo yon pero na feel nya na wala na ako magawa kainis ko talaga ewan ko 
+                    i treat di nya namn deserve yon napa feel ko pa sakanya na di sya enough na di sya maganda the guilt
+                    talaga pinapatay ako di namn totoo yon pero na feel nya na wala na ako magawa kainis ko talaga ewan ko
                     pano ako babawi sakanya at patunayan na di totoo lahat yon.. i regret talaga na gguilt ako masyado di nya deserve yon..
                     i regret everything talaga I'm so sorry.</p>
             </div>
@@ -233,26 +52,26 @@ box-sizing: border-box;
                 <p>
                     I'm feeling it again.. Idk.. I know namn na wala akong kwenta kausap lalo na pag dating sa problema,
                     but idk.. It's sad to know lang na sa iba sya nag ttrant ng prob nya at walang imik pag dating sakin..
-                    Sasabihin nya lang na sasabihin nya or I kkwento nya mamaya pero pag dating ng mamaya sasabihin nya 
-                    "I don't want to talk about it, pls", pero sa iba namn na kkwento nya.. Idk, baka sakin na ung mali, 
+                    Sasabihin nya lang na sasabihin nya or I kkwento nya mamaya pero pag dating ng mamaya sasabihin nya
+                    "I don't want to talk about it, pls", pero sa iba namn na kkwento nya.. Idk, baka sakin na ung mali,
                     it hurts lang to know na ganon.. Sana di ko nalng Inopen acc nya at mag basa basa ng convo, it's my fault din.
                     Maybe my I got too sweet? Para maging ganito, or maybe my purpose is just to be sweet, to understand and wait all the time..
-                    Gusto ko gumawa ng topic para mag usap kami ulit, but I guess that's the sign na ayaw nya na non sakin.. And i understand namn why, 
-                    kung ako rin di rin ako makikinig sa sarili ko e, wala namn kasi akong nasasabing tama lalo na sakanya, 
-                    minsan nga na kkairita na for her ung behaviour ko e, how I know? Kasi nag away kami about don.. 
+                    Gusto ko gumawa ng topic para mag usap kami ulit, but I guess that's the sign na ayaw nya na non sakin.. And i understand namn why,
+                    kung ako rin di rin ako makikinig sa sarili ko e, wala namn kasi akong nasasabing tama lalo na sakanya,
+                    minsan nga na kkairita na for her ung behaviour ko e, how I know? Kasi nag away kami about don..
                     That's why I keep changing ung childish kloyd noon na to be mature enough to met her expectations.. But i guess di pa enough,
-                    it hurts lang na naiisip ko ung dati, nammiss ko it makes me sad pag naiisip ko.. 
+                    it hurts lang na naiisip ko ung dati, nammiss ko it makes me sad pag naiisip ko..
                     But sadly muntik na kami mag away about doon kasi mmiss ko lang namn daw ung buhay ko noon pag malungkot ako..
-                    And now I change that, if I miss noon and sad di na ako nag bbulgar masyado ng emotions ko.. 
+                    And now I change that, if I miss noon and sad di na ako nag bbulgar masyado ng emotions ko..
                     Napakaiyakin ko kasing oa e BAHHAHAH but now I'm trying to change that.. To be sad but don't cry, to be upset but don't stress..
                     One time napa isip ako na; baka habang tumatagal pa less ng less care and love nya sakin.. Parang nawawala na ung effort tulad ng dati
-                    Idk I know di namn na lless love nya sakin, but now her actions speaks louder that her words.. Baka effort at gana lang nawala.. 
-                    Kaya di ko mapigilang mag overthink.. 
-                    And too scared to seek reassurance rin BAHAHAH.. Idk, it hurt lang minsan ang sama ko sa yong paningin.. And that's fine, 
+                    Idk I know di namn na lless love nya sakin, but now her actions speaks louder that her words.. Baka effort at gana lang nawala..
+                    Kaya di ko mapigilang mag overthink..
+                    And too scared to seek reassurance rin BAHAHAH.. Idk, it hurt lang minsan ang sama ko sa yong paningin.. And that's fine,
                     I completely understand namn; may mga valid reasons namn why, it's sad lang.. I miss the old lang, I miss how in love you were sakin..
                     I miss everything about you.. I miss how you see me as your dream man.. Or is it just my dream?.. Maybe I got too oa for all of this,
                     that's why my feelings are always not valid cause of my oa shits, but it's fine.. wala namn talaga akong ibubuga; I'm a joke, para akong babae sa relasyong to,
-                    and I'm ashamed to myself because of that. 
+                    and I'm ashamed to myself because of that.
                 </p>
             </div>
 
@@ -265,14 +84,24 @@ box-sizing: border-box;
     </div>
     <hr>
 
-   
 
-    <button id="myButton"><a href="index.html">Back</a></button>
 
-    <script>
-        document.getElementById("myButton").addEventListener("click", function() {
-        });
-    </script>
+    <div class="archive-actions">
+    <a class="primary-link" href="index.html">Back to the journal <span aria-hidden="true">&#8592;</span></a>
+</div>
+</main>
+<footer class="site-footer">
+    <p class="footer-heart" aria-hidden="true">&#9825;</p>
+    <p>Made with love, just for you.</p>
+    <nav aria-label="More keepsakes">
+        <a href="index.html">Home</a>
+        <a href="Diaries.html">My diaries</a>
+        <a href="List.html">Our list</a>
+    </nav>
+    <small>More memories to come.</small>
+</footer>
+
+
 
 </body>
 </html>

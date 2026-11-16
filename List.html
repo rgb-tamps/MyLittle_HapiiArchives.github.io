@@ -2,242 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ecb3c2">
+
     <title>List✨</title>
-    <style>
-            body {
-    background-image: url(./Lover\ Background.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif
-}
-
-button {
-    background-color: rgb(105, 143, 180);
-    border-radius: 5px;
-    border: none; /* Fixed border issue */
-    margin: 10px;
-    padding: 10px ; /* Adjusted padding */
-    text-align: center;
-    position: fixed;
-    bottom: 20px; /* Adjusted for mobile */
-    right: 50px; /* Adjusted for mobile */
-    z-index: 1000; /* Ensure button is on top */
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-
-        button:hover {
-            background-color: rgb(85, 123, 160);
-        }
-
-        button:active {
-            background-color: rgb(65, 103, 140);
-            transform: translateY(2px);
-        }
-
-a {
-    text-decoration: none;
-    color: rgb(245, 230, 199);
-    padding: 10px 60px;
-    
-}
-
-.containermain {
-    background-color: rgba(179, 191, 217, 0.5);
-    border-radius: 10px;
-    width: 95%; /* Use 95% for mobile */
-    margin: 10px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    box-sizing: border-box;
-    gap: 0; /* Set grid gap to zero */
-}
-
-.box {
-    font-family: Arial, sans-serif;
-}
-
-.title{
-    color: rgb(255, 255, 255);
-    background-color: rgb(236, 179, 194);
-    grid-column: span 4;
-    height: auto;
-    text-align: center;
-}
-.card-image1, .card-image2{
-    background-color: #ffffff; /* Default background color for both cards */
-    height: auto;
-    background-size: cover;
-    padding: 20px;
-    grid-column: span 2;
-    margin: 0; /* Remove margin */
-}
-
-.card-image1 h1 {
-    background-color: rgb(236, 179, 194);
-    color: #f8f8f8;
-    border-radius: 10px;
-    width: 430px;
-    padding: 10px;
-    margin: 5px 20px;
-    font-size: 40px;
-    text-align: center;
-}
-
-.card-image1 p {
-    color:rgb(240, 177, 90); 
-    font-size: 20px;
-    margin: 0;
-    padding: 20px 50px;
-    text-align: justify;
-}
-
-.card-image2 p{
-    color:rgb(240, 177, 90); 
-    font-size: 20px;
-    margin: 0;
-    padding: 50px;
-    text-align: justify;
-}
-li{
-    color:rgb(240, 177, 90);  
-    font-size: 20px;
-}
-span, ul{
-    padding: 20px 50px;
-    font-size: 20px;
-}
-
-
-
-
-.screen1{
-    padding: 10px ; /* Add padding for better spacing */
-}
-
-
-       
-    
-        
-@media (max-width: 600px) {
-            * {
-    box-sizing: border-box;
-  }
-
-  body {
-    overflow-x: hidden;
-
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  } 
-            button {
-                width: 90%; /* Full width button on mobile */
-                padding: 15px 30px; /* More padding */
-                right: auto;
-            }
-            a {
-                padding: 10px 100px;
-            }
-        
-            .containermain {
-    background-color: rgba(179, 191, 217, 0.5);
-    border-radius: 10px;
-    width: 95%; /* Use 95% for mobile */
-    margin: 10px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    box-sizing: border-box;
-    gap: 0; /* Set grid gap to zero */
-    margin-buttom:50px;
-}
-
-.box {
-    font-family: Arial, sans-serif;
-}
-
-.title{
-    color: rgb(255, 255, 255);
-    background-color: rgb(236, 179, 194);
-    grid-column: span 4;
-    height: auto;
-    text-align: center;
-}
-.card-image1, .card-image2{
-    background-color: #ffffff; /* Default background color for both cards */
-    height: auto;
-    background-size: cover;
-    padding: 5px;
-    grid-column: span 2;
-    margin: 0; /* Remove margin */
-}
-
-.title h1 {
-    background-color: rgb(236, 179, 194);
-    color: #f8f8f8;
-    width: 260px;
-    padding: 10px;
-    margin: 5px 20px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.card-image1 p {
-    color:rgb(240, 177, 90); 
-    font-size: 10px;
-    margin: 0;
-    padding: 10px 5px;
-    text-align: justify;
-}
-
-.card-image2 p{
-    color:rgb(240, 177, 90); 
-    font-size: 10px;
-    margin: 0;
-    padding: 10px 0;
-    text-align: justify;
-}
-li{
-    color:rgb(240, 177, 90);  
-    font-size: 10px;
-}
-ul{
-    padding: 5px 10px;
-    gap: 5px;
-    font-size:10px;
-}
-
-span{
-    padding: 5px ;
-    gap: 5px;
-    font-size:10px;
-}
-
-
-    }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
-<body>
+<body class="archive-body archive-list-page">
+<header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Lover's Journal home">LOVER <span aria-hidden="true">&#9825;</span></a>
+    <button class="menu-toggle" id="hamburgerButton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="menu" aria-label="Main navigation">
+        <a href="index.html#memories">Photo memories</a>
+        <a href="index.html#letters">Letters</a>
+        <a href="Diaries.html">My diaries</a>
+        <a href="List.html">Our list</a>
+    </nav>
+</header>
+<main class="archive-main">
+    <section class="archive-heading" aria-labelledby="archive-title">
+        <p class="eyebrow">A little keepsake</p>
+        <h1 id="archive-title">Our list</h1>
+    </section>
     <div class="screen1">
     <div class="containermain">
         <div class="title">
         <h1>✨MY PALANGGA✨</h1>
     </div>
         <div class="box card-image1">
-          
-            
-            
+
+
+
         <p>
             <span style=" color: rgb(186, 112, 139); font-weight: bold;">NAME:</span>Jhelouny Fajardo Madera <br>
             <br>
@@ -263,38 +61,38 @@ span{
         </span>
 
         </p>
-       
-        <span style=" color: rgb(186, 112, 139); font-weight: bold;">HATE'S</span>       
-        <ul>    
-                                      
-    <li> -dry/cold reply    </li>                               
-    <li>  -being push away      </li>             
-    <li>   -ignored              </li>                      
-    <li>   -word affirmation</li>                                
-    <li>  -dirty mind      </li>                            
-    <li>   -to open up        </li>                
-    <li>   -saying no to her      </li>           
+
+        <span style=" color: rgb(186, 112, 139); font-weight: bold;">HATE'S</span>
+        <ul>
+
+    <li> -dry/cold reply    </li>
+    <li>  -being push away      </li>
+    <li>   -ignored              </li>
+    <li>   -word affirmation</li>
+    <li>  -dirty mind      </li>
+    <li>   -to open up        </li>
+    <li>   -saying no to her      </li>
     <li>  -raising voice to her </li>
     <li>  -hates loud chewing  </li>
-        </ul> 
-        <span style=" color: rgb(186, 112, 139); font-weight: bold;">LIKE'S </span> 
-        <ul>    
-                                      
-            <li>  - singing   </li>                               
-            <li>     - act os service       </li>             
-            <li>   - ice cream             </li>                      
-            <li>  - being pursued  </li>                                 
-            <li>   - princess treatment     </li>                            
-            <li>     - manggo     </li>                
-            <li>   - langka    </li>           
-                </ul>  
+        </ul>
+        <span style=" color: rgb(186, 112, 139); font-weight: bold;">LIKE'S </span>
+        <ul>
+
+            <li>  - singing   </li>
+            <li>     - act os service       </li>
+            <li>   - ice cream             </li>
+            <li>  - being pursued  </li>
+            <li>   - princess treatment     </li>
+            <li>     - manggo     </li>
+            <li>   - langka    </li>
+                </ul>
                 <span style=" color: rgb(186, 112, 139); font-weight: bold;">   sizes: </span>
                 <ul>
-            <li>-Always medium </li>  
-            <li>-Panties L </li>  
-            <li>-Pants high waisted 28 </li>  
-            <li>-28 waist line </li>  
-            <li>-Bra 34/75A </li>  
+            <li>-Always medium </li>
+            <li>-Panties L </li>
+            <li>-Pants high waisted 28 </li>
+            <li>-28 waist line </li>
+            <li>-Bra 34/75A </li>
 </ul>
 
 <span style=" color: rgb(186, 112, 139); font-weight: bold;">   Bulacan address: </span>
@@ -302,7 +100,28 @@ span{
 Zip Code 3013
 </p>
 
-
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">June 6, 23-</span> she add me /FB</p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">June 7, 23-</span>first chat</p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">July 20, 23-</span>I ask for space (the start of regret)</p> <br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Aug 20, 23-</span> I came back (after the space) </p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Aug 31, 23-</span>I ask her for a date(ligaw) </p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Sept 6, 23-</span>first physical touch</p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Sept 9, 23-</span>first date(hang out) </p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Sept 12, 23-</span>first hatid pauwi sa kanila</p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Sept 18, 23-</span>first hug</p><br>
+<p><span style=" color: rgb(255, 0, 93); font-weight: bold;">October 6, 23/ 6:20PM-</span> she said yes(to be my gf)</p> <br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Oct 7, 23-</span> first time she says iloveyou (I melted)</p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Oct 13, 23-</span> legal day (pinakilala ko sya sa fam ko) </p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Oct 22, 23-</span>first watch sunset (first beach)</p> <br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Dec 2, 23-</span>promise ring</p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Dec 6, 23-</span>balayong date(first kiss) </p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Jan 11, 24-</span>first cuddle/first time nakita nya body ko(Naka t-shirt)</p> <br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Jan 19, 24-</span>first french kiss (Lp) </p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Jan 25, 24-</span>irst breast touch (lambot🥰)</p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Jan 30, 24-</span>first play roblox (with my brother n sister) </p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">Mar 23, 24-</span>first bj</p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">June 13, 24-</span> Virginity lost</p><br>
+<p><span style=" color: rgb(186, 112, 139); font-weight: bold;">July 2, 24- </span>first cinema together</p><br>
 <br>
         </div>
 
@@ -310,15 +129,9 @@ Zip Code 3013
 
         <div class="box card-image2">
             <p>
-                <span style=" color: rgb(186, 112, 139); font-weight: bold;">IG/FB:</span>  Ih_hapi<br>
-                <span style=" color: rgb(186, 112, 139); font-weight: bold;">PASS:</span>Myhapi100623## <br> <br>  
-                <span style=" color: rgb(186, 112, 139); font-weight: bold;">GMAIL:</span>  ihhapi@gmail.com<br> 
-                <span style=" color: rgb(186, 112, 139); font-weight: bold;">PASS:</span>Myhapi100623##<br> <br> 
-                
-                <span style=" color: rgb(186, 112, 139); font-weight: bold;"> My FB Acc:</span> Kloyd tampus<br> 
-                <span style=" color: rgb(186, 112, 139); font-weight: bold;">PASS:</span>Tampuscamilo1234##<br> <br> 
-                
-                <span style=" color: rgb(186, 112, 139); font-weight: bold;">Gcash ni mami:</span>    09913311168
+
+
+
             </p>
 
             <span style=" color: rgb(186, 112, 139); font-weight: bold;">✨GOALS TOGETHER✨ </span>
@@ -353,7 +166,7 @@ Zip Code 3013
 
         </ul>
 
-        <span style=" color: rgb(186, 112, 139); font-weight: bold;">✨DREAM/GOALS✨ </span> 
+        <span style=" color: rgb(186, 112, 139); font-weight: bold;">✨DREAM/GOALS✨ </span>
          <p>Simple but beautiful house, modern look, white color, have 2nd floor, with light brown furniture , have a terrace and a pool, the living room and the kitchen located in 1floor and the rooms in 2floor
             A home good for 2 people <br>
             <br>
@@ -365,20 +178,30 @@ Zip Code 3013
             <br>
             </p>
         </div>
-   
-        
+
+
 
     </div>
     </div>
 
 
-    
-<button id="myButton"><a href="index.html">Back</a></button>
 
-<script>
-    document.getElementById("myButton").addEventListener("click", function() {
-    });
-</script>
-  
+<div class="archive-actions">
+    <a class="primary-link" href="index.html">Back to the journal <span aria-hidden="true">&#8592;</span></a>
+</div>
+</main>
+<footer class="site-footer">
+    <p class="footer-heart" aria-hidden="true">&#9825;</p>
+    <p>Made with love, just for you.</p>
+    <nav aria-label="More keepsakes">
+        <a href="index.html">Home</a>
+        <a href="Diaries.html">My diaries</a>
+        <a href="List.html">Our list</a>
+    </nav>
+    <small>More memories to come.</small>
+</footer>
+
+
+
 </body>
 </html>

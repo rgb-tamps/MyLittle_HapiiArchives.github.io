@@ -2,115 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ecb3c2">
+
+
     <title>Diary</title>
-    <style>
-       body {
-    background-image: url(./Lover\ Background.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-}
-
-button {
-    background-color: rgb(105, 143, 180);
-    border-radius: 5px;
-    border: none; /* Fixed border issue */
-    margin: 10px;
-    padding: 10px ; /* Adjusted padding */
-    text-align: center;
-    position: fixed;
-    bottom: 20px; /* Adjusted for mobile */
-    right: 50px; /* Adjusted for mobile */
-    z-index: 1000; /* Ensure button is on top */
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-
-        button:hover {
-            background-color: rgb(85, 123, 160);
-        }
-
-        button:active {
-            background-color: rgb(65, 103, 140);
-            transform: translateY(2px);
-        }
-
-a {
-    text-decoration: none;
-    color: rgb(245, 230, 199);
-    padding: 10px 60px;
-    
-}
-
-.containermain {
-background-color: rgba(179, 191, 217, 0.5);
-border-radius: 10px;
-width: 95%; /* Use 95% for mobile */
-margin: 10px auto;
-padding: 20px;
-display: grid;
-grid-template-columns: repeat(4, 1fr); /* 3 columns */
-gap: 10px; /* Space between images */
-box-sizing: border-box;
-}
-
-@media (max-width: 600px) {
-            * {
-    box-sizing: border-box;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  } 
-            button {
-                width: 90%; /* Full width button on mobile */
-                padding: 15px 30px; /* More padding */
-                right: auto;
-            }
-            a {
-                padding: 10px 100px;
-            }
-        
-            .containermain {
-        border-radius: 10px;
-         width: 100%; /* Use 95% for mobile */
-         margin: 5px 0;
-         padding: 5px 0;
-         display: grid;
-         grid-template-columns: repeat(2, 1fr); /* 3 columns */
-         gap: 10px; /* Space between images */
-         box-sizing: border-box;
-}
-
-.card-image {
-            height: 190px; /* Smaller images for mobile */
-            width: 150px;
-            padding: 5px;
-            margin: 10px;
-        }
-        .pics {
-            margin: 0.005rem;
-        }
-            .videos video {
-                width: 150%; /* Full width videos */
-                height: auto; /* Maintain aspect ratio */
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
-<body>
+<body class="archive-body archive-note-page">
+<header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Lover's Journal home">LOVER <span aria-hidden="true">&#9825;</span></a>
+    <button class="menu-toggle" id="hamburgerButton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="menu" aria-label="Main navigation">
+        <a href="index.html#memories">Photo memories</a>
+        <a href="index.html#letters">Letters</a>
+        <a href="Diaries.html">My diaries</a>
+        <a href="List.html">Our list</a>
+    </nav>
+</header>
+<main class="archive-main">
+    <section class="archive-heading" aria-labelledby="archive-title">
+        <p class="eyebrow">A note from me</p>
+        <h1 id="archive-title">Diary</h1>
+    </section>
     <div class="containermain">
     <div class="videos">
         <video width="640" height="360" controls>
@@ -118,15 +35,25 @@ box-sizing: border-box;
         </video>
     </div>
 
-    <button id="myButton"><a href="index.html">Back</a></button>
+    <div class="archive-actions">
+    <a class="primary-link" href="index.html">Back to the journal <span aria-hidden="true">&#8592;</span></a>
+</div>
+</main>
+<footer class="site-footer">
+    <p class="footer-heart" aria-hidden="true">&#9825;</p>
+    <p>Made with love, just for you.</p>
+    <nav aria-label="More keepsakes">
+        <a href="index.html">Home</a>
+        <a href="Diaries.html">My diaries</a>
+        <a href="List.html">Our list</a>
+    </nav>
+    <small>More memories to come.</small>
+</footer>
 </div>
 
 
 
-    <script>
-        document.getElementById("myButton").addEventListener("click", function() {
-        });
-    </script>
+
 
 </body>
 </html>

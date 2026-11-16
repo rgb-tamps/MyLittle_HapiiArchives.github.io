@@ -2,159 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hapii First Anniversary!!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ecb3c2">
+    <title>Our First Anniversary | Lover's Journal</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <header>
-        <button class="hamburger" id="hamburgerButton">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+    <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="Lover's Journal home">LOVER <span>♡</span></a>
+        <button class="menu-toggle" id="hamburgerButton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation">
+            <span></span><span></span><span></span>
         </button>
-        <h1>LOVER</h1>
-        <nav class="menu" id="menu">
-            <ul>
-                <li><a href="Diaries.html">My Diaries</a></li>
-                <li><a href="https://wannabemyvalentine.netlify.app">Hapiicat</a></li>
-                <li><a href="https://bit.ly/ForMyLanglangg">HappyBirthday❤️</a></li>
-                <li><a href="https://rgb-tamps.github.io/bebs/section1.html">Apology(past)</a></li>
-                <li><a href="./Apology.html">Apology(new)</a></li>
-                <li><a href="./List.html">Our List✨ </a></li>
-            </ul>
+        <nav class="site-nav" id="menu" aria-label="Main navigation">
+            <a href="#memories">Photo memories</a>
+            <a href="#letters">Letters</a>
+            <a href="Diaries.html">My diaries</a>
+            <a href="List.html">Our list</a>
         </nav>
     </header>
 
-    <script src="index.js"></script>
-
-
-    <div class="section screen1">
-    <div class="main">
-    <div class="box box1">
-   
-        <div class="left">
-            <div class="containerleft">
-                <div class="text-box">
-                <h1>Happiii Anniversary My Palanglanggg!!</h1>
-                <p>
-                    I made this Web-gallery for you to remind you everyday and everymoment na kapiling kita ay napaka halaga at special para sakin, 
-                    kahit na malayo ikaw sa tabi ko nandito lang and Web nato to remind you na nandito parin ako sa tabi mo, supporting and loving/caring for you. 
-                    I want to capture every moment and every memory and your smile forever, and I just want to thank you. Mahal,
-                    kasi lagi ka nandito para sakin. You always loved, care, and support me sa lahat ng mga Gawain at hamon na meron ako.
-                    I want to remind you everyday that kahit wala ka sa tabi mo hinding hindi parin magbababago pagmamahal ko sayo,
-                    ikaw parin ang babaksakan ko. I'm so lucky to have you palangga, and Thank youu so muchh for being a beautiful greatt girlfriend/partner for me myy lovlovee. 
-                    Words are not enough to say thank you, and I love you, so I'll give you my all. HAPIII ANNIVERSARYY MYY LOVERR❤️❤️❤️.
-                </p>
+    <main id="home">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">A little archive of us · 2023—2024</p>
+                <h1 id="hero-title">Happiii Anniversary,<br>my Palanglanggg <span>♡</span></h1>
+                <p class="hero-intro">Every little moment with you means the world to me. This journal is here to keep our memories close, and to remind you that I’m always cheering for you and loving you—wherever we are.</p>
+                <a class="primary-link" href="#memories">Wander through our memories <span aria-hidden="true">↓</span></a>
+                <p class="handwritten">For my favorite person, always.</p>
+            </div>
+            <div class="hero-art">
+                <div class="photo-frame">
+                    <div class="photo-scroll">
+                        <img src="list.jpg" alt="A keepsake from our time together">
+                    </div>
+                    <span class="photo-note">little moments, forever ours</span>
                 </div>
+                <span class="hero-heart" aria-hidden="true">♡</span>
             </div>
-        </div>
-    </div>  
-    
-    <div class="box box2">
-        <div class="right">
-            <div class="item">
-                <button class="button-gallery" id="myButton"><a href="August.html">August 2023</a></button>
-                <button class="button-gallery" id="myButton"><a href="November.html">November 2023</a></button>
-                <button class="button-gallery" id="myButton"><a href="February.html">February 2024</a></button>
-                <button class="button-gallery" id="myButton"><a href="May.html">May 2024</a></button>
-                <button class="button-gallery" id="myButton"><a href="August24.html">August 2024</a></button>
+        </section>
+
+        <section class="memory-section" id="memories" aria-labelledby="memories-title">
+            <div class="section-heading">
+                <p class="eyebrow">The memory shelf</p>
+                <h2 id="memories-title">Our story, month by month</h2>
+                <p>Pick a chapter to revisit the photos and little clips we collected along the way.</p>
             </div>
-            <div class="item">
-                <button class="button-gallery" id="myButton"><a href="September.html">September 2023</a></button>
-                <button class="button-gallery" id="myButton"><a href="December.html">December 2023</a></button>
-                <button  class="button-gallery"id="myButton"><a href="March.html">March 2024</a></button>
-                <button class="button-gallery"id="myButton"><a href="June.html">June 2024</a></button>
-                <button  class="button-gallery"id="myButton"><a href="September24.html">September 2024</a></button>
+            <div class="month-grid">
+                <a class="month-card" href="August.html"><span class="month-date">2023 · 01</span><strong>August</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="September.html"><span class="month-date">2023 · 02</span><strong>September</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="October.html"><span class="month-date">2023 · 03</span><strong>October</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="November.html"><span class="month-date">2023 · 04</span><strong>November</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="December.html"><span class="month-date">2023 · 05</span><strong>December</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="January.html"><span class="month-date">2024 · 01</span><strong>January</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="February.html"><span class="month-date">2024 · 02</span><strong>February</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="March.html"><span class="month-date">2024 · 03</span><strong>March</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="April.html"><span class="month-date">2024 · 04</span><strong>April</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="May.html"><span class="month-date">2024 · 05</span><strong>May</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="June.html"><span class="month-date">2024 · 06</span><strong>June</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="July.html"><span class="month-date">2024 · 07</span><strong>July</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="August24.html"><span class="month-date">2024 · 08</span><strong>August</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
+                <a class="month-card" href="September24.html"><span class="month-date">2024 · 09</span><strong>September</strong><span class="month-arrow" aria-hidden="true">↗</span></a>
             </div>
-            <div class="item">
-                <button class="button-gallery" id="myButton"><a href="October.html">October 2023</a></button>
-                <button  class="button-gallery"id="myButton"><a href="January.html">January 2024</a></button>
-                <button class="button-gallery" id="myButton"><a href="April.html">April 2024</a></button>
-                <button  class="button-gallery"id="myButton"><a href="July.html">July 2024</a></button>
+        </section>
+
+        <section class="letters-section" id="letters" aria-labelledby="letters-title">
+            <div class="section-heading">
+                <p class="eyebrow">A note from me to you</p>
+                <h2 id="letters-title">A few things I want you to know</h2>
+                <p>Take your time with these. They’re written with all my love.</p>
             </div>
-        </div>   
-    </div>
-    <div class="box box3">
-        <div class="baba">
-           <img src="https://tenor.com/view/stupid-idiot-cat-dancing-gif-8753079739214178634.gif" alt="My Hapii Hapiicatt" width="580" height="580">
-    </div>
-</div>
-</div>
-</div>  
+            <div class="letter-grid">
+                <article class="letter-card letter-card-peach">
+                    <span class="letter-label">Thank you</span>
+                    <h3>For being my safe place</h3>
+                    <p>I just wanna say thank you, palangga, for all your love and support. Every time I’m down, lagi mo na i-snap away ang lungkot at pagod ko. You are my inspiration sa pang-araw-araw ko; every time I see you and talk to you, you brighten up my sad and tiring day.</p>
+                    <p>Simula pa nung una, you’ve always been here by my side. You make me feel special—you showed the batang Kloyd na hindi siya mahirap mahalin. You helped me grow as a person and as your partner, and I’m so grateful to have a girl like you in my life.</p>
+                    <p>Our environment and our time may change, but your love and support are still here. Words are never enough to say thank you and I love you, so I’ll give you my all. Hapiii first anniversary again, my hapiihapii. I love you always. ❤️</p>
+                </article>
+                <article class="letter-card letter-card-pink">
+                    <span class="letter-label">I’m sorry</span>
+                    <h3>And I’ll keep growing</h3>
+                    <p>I know I say this a lot, love, and I’m sorry for every disappointment, action, and behavior that hurt you. I didn’t notice at first; I thought it was okay because I could make up for it. But I realize now that I repeated mistakes and made you feel unloved.</p>
+                    <p>I truly regret hurting you, especially when all you did was love and care for me. I didn’t know how to say sorry for all I’ve done, but I want you to know that I hear you. I want to make you feel that you’re not hard to love and that you’re worth choosing every day.</p>
+                    <p>I’ll keep working to be a better man, my love. Please remember that you are loved by me.</p>
+                </article>
+                <article class="letter-card letter-card-blue">
+                    <span class="letter-label">Always</span>
+                    <h3>Here’s to our next chapters</h3>
+                    <p>I’ll keep pushing forward, my love, so we can make our dream come true. I want our future to be secure and happy; malayo pa pero malayo na, and it’s still the two of us in this story.</p>
+                    <p>Thank you so much for existing in my life, my pretty palangga. Hapiii anniversary, my love. I love youuuuu always. ❤️</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-    <hr class="line"></hr>
-
-    
- <div class="section screen2">
-  <div class="bottom-box">
-   <div class="low">
-        <div class="box box4"><p>
-            I just wanna say Thank you palangga for all your love and support,
-            everytime I'm down lagi mo na i-snap away ang lungkot at pagod ko, you are my inspiration 
-            sa pang araw-araw ko, everytime I see you and talk to you brighten up my sad and tiring day, 
-            simula pa nung una your always here by my side, you make me feel special binuhay mo
-            ung batang kloyd; pinakita at pinaramdam mo sakanya na hindi sya mahirap mahalin,
-            tinulungan mo ako mag grow bilang ako at bilang partner mo, di ikaw sumuko despite sa lahat ng 
-            mga nagawa ko at mga disappoinments na nabigay ko sayo,
-            you guided me to be a better person to be your man, and for that noon until now I'm so grateful to sky above 
-            for giving me a girl like you specially in this generation na malabo na ang isang tulad mo,
-            simula una palang you showed me your faith and loyalty, and you didn't let me overthink and cry 
-            pag magulo isipan ko, kahit na minsan kainis na ako sayo at mga ganong behavior ko, but di mo parin
-            ako iniwan. Until now, our 1st Anniversary(12th months) your love and support didn't change, 
-            kahit na nagbago na ang lahat, our environment and out time you still the sweetest madera na once na fall 
-            sa isang kloyd tampus, i know i say this a lot love but really; words are not enough to say thank you and i love you 
-            so I'll give you the life you wanted and dreamed of, i know bata pa tayo to let go some words, alam ko naman 
-            kaya di ikaw nag sasalita ng dream mo kasama ako kasi takot ikaw ma jinx lahat ng to at ng mga sinabi mo and it's fine,
-            Don't worry about me finding new my love, pera lang hahanapin ko dito hindi babae, your stuck with me na.
-            Because i made a promise to myself and sayo; noon palang na we will make this dream(our dream) come true,
-            and I'll make sure of it. I'll keep pushing forward my love, for you to have a rich and better man like the man of your dreams,
-            I'll make sure our future is secure and healthy, malayo pa pero malayo na, tayong dalawa lang sa storyang ito. I hope I can be your inspiration too, 
-            Thank you so much for existing in my life my prettyyy palanggaa koo,
-            HAPIII 1st ANNIVERSARYY Againnn myyy HAPIIHAPIII❤️,ILOVEEEOUUUUUUUU ALWAYSSS❤️❤️❤️. 
-        </p></div>
-        <div class="box box5"><p>
-            I know i say this a lot love, and I know you hate this so much about me kasi lagi ko nalng syang sinasabi
-            to the point na it's a normal thing nalng sya sayo, like empty and na manhid kana sa mga ganito ko kasi lagi nalng 
-            pa ulit-ulit.. I just wanna say sorry love for every disappoinments, actions, and behavior ko, I didn't notice
-            until i realise it's too much and I'm too much na pala for you;<.. at first kala ko okay lang kasi nakakabawi
-            naman ako and I'm doing grate. But no, in reality I'm the worst, I realise that I'm so selfish, immature, 
-            and always repeating my mistakes and always making you feel like your nothing and unloved.. The past pain and
-            guilt still lives inside me, I know it sounds so dumb but I'm still suffering to the pain I've caused you, sakin parin
-            guilt at regrets ng nakaraan, maybe ito na ung sinasabi nila na "Your actions will come back to you someday" and I 
-            guess this is the day, noon palang hinahunt na ako ng mga nagawa ko and hanggang ngayon.. cause I truly regtret
-            hurting you, na walang ibang ginawa kundi mahalin ako ng totoo at mag care saakin, wala pa kasing nagagawa sakin non e..
-            sayo ko naramdaman yon, di ko nakita nung bumitaw na, and syempre i didn't waste any time to chase that girl to bring her back,
-            and I made a promise to make it right this time, and now I still don't know if I'm making you feel unloved ba.. 
-            I don't want to hurt my little Palangga anymore;<, gusto ko ipa-feel sakanya na di sya mahirap mahalin at worth sya keep at ipanalo,
-            I didn't know how to say sorry for all that I've Done.. The word sorry is getting blurry in my mouth, and mistakes after disappoinments and Again,
-            My fear of losing you is getting stronger and stronger that one day I might not see your face again.. that's why
-            I always insecure if your upset or mad or did i do something to make you feel that way, I'm so scared;<.. 
-            I don't want to lose you again and hurt you;<.. I'll be a better man for you my love, and that's more than a promise;
-            I'm really sorry again for all I've done palangga ko;<. Pls, don't forget that iloveeyouu my love and you'll always
-            loved by me. 
-        </p></div>
-        <div class="box box6"><p>
-          Pls Stay for me forever pls;<.. ako lang i lovelove mo;<.. Pls wag ikaw mapagod sakin palangga ko;<
-        </p></div>
-    </div>
-    </div>
-    
-</div> 
-
-
-
-
-
-
-    <footer> 
-        <div class="footer">
-            <a href="https://www.facebook.com/profile.php?id=61560515712771" alt="Our Account" style="cursor: pointer; color: aliceblue;" ><h3>FB: Ih_hapi</h3></a>
-            <a href="#" alt="Our Account" style=" color: aliceblue;" ><h3>GMAIL: ihhapi@gmail.com</h3></a>
-            <a href="#" alt="Announcement"  style=" color: aliceblue;"><h3>Note: May have future updates </h3></a>
-            <a href="#" alt="Announcement"  style=" color: aliceblue;"><h3>SORYYY SA DELAY LOVEE;< </h3></a>
-        </div>
+    <footer class="site-footer">
+        <p class="footer-heart" aria-hidden="true">♡</p>
+        <p>Made with love, just for you.</p>
+        <nav aria-label="More keepsakes">
+            <a href="Diaries.html">My diaries</a>
+            <a href="List.html">Our list</a>
+            <a href="https://wannabemyvalentine.netlify.app">Hapiicat</a>
+        </nav>
+        <small>More memories to come.</small>
     </footer>
 </body>
 </html>
